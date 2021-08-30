@@ -1,0 +1,150 @@
+body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+/* Navbar Style */
+#navbar {
+  text-align: center;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  width: 100%;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: #485460;
+}
+li {
+  float: left;
+}
+li a {
+  display: block;
+  color: #d2dae2;
+  padding: 15px;
+  text-decoration: none;
+}
+li a:hover {
+  background: #d2dae2;
+  color: #485460;
+}
+
+/* Welcome Style */
+#welcome-section {
+  background: #808e9b;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  position: default;
+  text-align: center;
+}
+#welcome-parent h1 {
+  color: #1e272e;
+  font-size: 35px;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 2px;
+  padding: 2px;
+  margin: 2px 0;
+  margin-top: 200px;
+  background: #d2dae2;
+  display: inline-block;
+}
+#welcome-parent h2 {
+  color: #1e272e;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: normal;
+  font-family: "Lora", serif;
+  padding: 2px;
+  background: #d2dae2;
+  display: inline-block;
+  opacity: 0.9;
+}
+
+/* Project Style */
+#projects {
+  text-align: center;
+  padding-top: 100px;
+  background: #d2dae2;
+}
+#projects h2 {
+  color: #1e272e;
+  font-family: "Montserrat", sans-serif;
+}
+#deskripsi {
+  font-family: "Lora", serif;
+  font-weight: normal;
+  font-style: italic;
+  color: #1e272e;
+}
+.link-projects {
+  color: #d2dae2;
+  font-family: "Lora", serif;
+  font-weight: normal;
+  text-decoration: none;
+}
+.project-tile {
+  width: 40%;
+  display: inline-block;
+  margin: 20px;
+  font-family: "Hind Madurai", sans-serif;
+  transition: box-shadow 1s;
+  background: #485460;
+  border-radius: 10px;
+  color: #d2dae2;
+  letter-spacing: 2px;
+}
+.project-tile:hover {
+  box-shadow: 5px 5px 5px #888888;
+}
+
+/* Contact Style */
+#contact {
+  background: #485460;
+  text-align: center;
+}
+.media {
+  display: inline-block;
+  width: 20%;
+  max-width: 200px;
+  margin-bottom: 10px;
+}
+#contact-parent h3 {
+  color: #d2dae2;
+  letter-spacing: 2px;
+  margin-top: 0;
+  padding-top: 20px;
+  font-weight: normal;
+}
+.fab {
+  font-size: 50px;
+  color: #d2dae2;
+}
+
+/* Responsive Style */
+@media (max-width: 450px) {
+  .navbar-parent {
+    padding: 10px;
+  }
+  #welcome-parent {
+    text-align: left;
+  }
+  #welcome-parent h1 {
+    margin-bottom: 10px;
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+  #welcome-parent h2 {
+    margin: 0 15px;
+  }
+  .project-tile {
+    width: 75%;
+  }
+  .fab {
+    font-size: 25px;
+  }
+}
